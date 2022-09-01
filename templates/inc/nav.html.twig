@@ -1,0 +1,27 @@
+<nav>
+    {# {% if app.user %}
+        <div>
+            Bonjour {{ app.user.pseudo }} !
+        </div>
+    {% endif %} #}
+
+    <ul>
+        <li><a href="{{ path('home_home') }}" title="Home">Home</a></li>
+        <li><a href="{{ path('wish_list') }}" title="list">liste</a></li>
+
+        {# {% if app.user %}
+
+            <li><a href="{{ path('wish_create') }}" title="create">Ajouter une idée</a></li>
+            <li><a href="{{ path('app_logout') }}" title="Se déconnecter">Se déconnecter</a></li>
+
+        {% else %}
+
+            <li><a href="{{ path('app_login') }}" title="Se connecter">Se connecter</a></li>
+            <li><a href="{{ path('app_register') }}" title="S'inscrire'">S'inscrire</a></li>
+
+        {% endif %} #}
+
+
+        <li><a href="{{ path('home_aboutUs') }}" title="About us">About us</a></li>
+    </ul>
+</nav>
